@@ -4,25 +4,26 @@
         <TopNav/>
     </div>
     <div class="theMain">
-
+        <Dive/>
     </div>
 </div>
 </template>
 
 <script>
 import TopNav from './TopNav/TopNav.vue'
+import Dive from './Main/Dive.vue'
 export default {
     components:{
         TopNav,
+        Dive
     },
-    setup(){
-    }
 }
 </script>
 
 <style scoped>
 .theLayoutWrapper{
     width: 100%;
+    height: 5597px;
 }
 .theTopNav{
     position: fixed;

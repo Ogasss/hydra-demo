@@ -56,6 +56,10 @@ input{
 }
 body{
   background: #000;
+  color: white;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 .appWrapper{
     width: 100vw;

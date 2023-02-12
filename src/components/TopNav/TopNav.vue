@@ -45,6 +45,13 @@ export default {
     .theLogoWrapper{
         display: flex;
         align-items: center;
+        opacity: 0.9;
+    }
+    .theLogoWrapper:hover{
+        opacity: 1;
+    }
+    .theLogoWrapper:active{
+        opacity: 0.9;
     }
     .theLogoWrapper .logo{
         margin-right: 15px;
