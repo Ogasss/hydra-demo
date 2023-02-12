@@ -35,12 +35,15 @@ export default {
     }
 }
 </script>
+
 <style scoped>
     .theTopNavWrapper{
         padding: 50px 84px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+
     }
     .theLogoWrapper{
         display: flex;
