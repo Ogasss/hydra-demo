@@ -5,6 +5,7 @@
     </div>
     <div class="theMain">
         <Dive/>
+        <Introduction/>
     </div>
 </div>
 </template>
@@ -12,10 +13,12 @@
 <script>
 import TopNav from './TopNav/TopNav.vue'
 import Dive from './Main/Dive.vue'
+import Introduction from './Main/Introduction.vue'
 export default {
     components:{
         TopNav,
-        Dive
+        Dive,
+        Introduction
     },
 }
 </script>
@@ -23,7 +26,7 @@ export default {
 <style scoped>
 .theLayoutWrapper{
     width: 100%;
-    min-width: 1324px;
+    min-width: 1485px;
     height: 5597px;
 }
 .theTopNav{
@@ -33,6 +36,7 @@ export default {
     z-index: 2;
 }
 .theMain{
+    padding: 0px 84px;
     position: relative;
     z-index: 1;
 }

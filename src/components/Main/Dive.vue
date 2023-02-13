@@ -51,7 +51,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 
@@ -86,7 +85,6 @@ export default {
 
 <style scoped>
     .theDiveWrapper{
-        padding: 0px 84px;
         padding-top: 30.63vh;
         width: 100%;
         overflow: auto;
