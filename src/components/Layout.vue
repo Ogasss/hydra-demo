@@ -23,6 +23,7 @@ export default {
 <style scoped>
 .theLayoutWrapper{
     width: 100%;
+    min-width: 1324px;
     height: 5597px;
 }
 .theTopNav{

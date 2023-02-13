@@ -43,7 +43,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         background: rgba(0, 0, 0, 0.8);
-
+        min-width: 1144px;
     }
     .theLogoWrapper{
         display: flex;
@@ -92,21 +92,6 @@ export default {
     @media (max-width: 1275px){
         .theNavOptions{
             width: 310px;
-        }
-    }
-    @media (max-width: 770px){
-        .theNavOptions{
-            margin-left: 90px;
-        }
-    }
-    @media (max-width: 730px){
-        .theNavOptions{
-            display: none;
-        }
-    }
-    @media (max-width: 1070px){
-        .theNavOptions{
-            display: none;
         }
     }
 </style>
