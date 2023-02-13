@@ -7,6 +7,8 @@
         <Dive/>
         <Introduction/>
         <Why/>
+        <Technologies/>
+        <How/>
     </div>
 </div>
 </template>
@@ -16,13 +18,18 @@ import TopNav from './TopNav/TopNav.vue'
 import Dive from './Main/Dive.vue'
 import Introduction from './Main/Introduction.vue'
 import Why from './Main/Why.vue'
+import Technologies from './Main/Technologies.vue'
+import How from './Main/How.vue'
+
 import { onMounted } from 'vue'
 export default {
     components:{
         TopNav,
         Dive,
         Introduction,
-        Why
+        Why,
+        Technologies,
+        How
     },
     setup(){
         let scrollTop = 0

@@ -68,6 +68,9 @@ export default {
     .sectionWrapper .introductionSection{
         margin: auto;
     }
+    .leftPart{
+        width: auto;
+    }
     .leftPart .to{
         margin-top: 10px;
     }
@@ -85,5 +88,11 @@ export default {
     }
     .leftPart{
         margin-right: 140px;
+    }
+
+    @media (max-width: 1520px){
+        .leftPart{
+            width: 50%;
+        }
     }
 </style>

@@ -10,16 +10,22 @@
 import { computed } from 'vue'
 export default {
     props:[
-        'simple'
+        'simple',
+        'ball'
     ],
     setup(props){
-        const { simple } = props
+        const { simple,ball } = props
         const buttonStyle = computed(()=>{
+            let style
             if(simple === ''){
-                return 'hydraButtonSimple'
+                style = 'hydraButtonSimple'
             }else{
-                return 'hydraButton'
+                style = 'hydraButton'
             }
+            if(ball === ''){
+                style = style + ' ball'
+            }
+            return style
         })
         return {
             buttonStyle
@@ -70,5 +76,9 @@ export default {
     }
     .hydraButton:active{
         opacity: 0.9;
+    }
+    .ball{
+        border-radius: 50%;
+        opacity: 1;
     }
 </style>
