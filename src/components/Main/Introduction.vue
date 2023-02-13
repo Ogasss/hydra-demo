@@ -1,23 +1,20 @@
 <template>
     <div class="theIntroductionWrapper">
-        <header class="headerWrapper">
-            <div class="leftPart">
-                <div class="introductionTitle">INTRODUCTION</div>
-                <div class="to">
-                    <span class="introductionLittleTittle">TO HYDRA VR</span>
-                    <img class="leftLine" :src="leftLine" alt="">
-                </div>
-            </div>
-            <div class="sectionWrapper">
-                <div class="introductionSection">
-                    Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiatnibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
-                </div>
-            </div>
-        </header>
+        <LeftLineSection>
+            <template v-slot:title>
+                INTRODUCTION
+            </template>
+            <template v-slot:littleTitle>
+                TO HYDRA VR
+            </template>
+            <template v-slot:section>
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+            </template>
+        </LeftLineSection>
 
         <main class="mainWrapper">
             <img class="IntroductionImageOne" :src="IntroductionImageOne" alt="">
-            <div class="textWrappers">
+            <div class="textWrapper">
                 <div class="introductionTitle">ABOUT</div>
                 <div class="introductionLittleTittle">HYDRA VR</div>
                 <div class="introductionSection">
@@ -28,21 +25,32 @@
                 <Button class="touch">LET'S GET IN TOUCH</Button>
             </div>
         </main>
-        
+
+        <LeftLineSection>
+            <template v-slot:title>
+                WHY BUILD
+            </template>
+            <template v-slot:littleTitle>
+                WITH HYDRA?
+            </template>
+            <template v-slot:section>
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+            </template>
+        </LeftLineSection>
     </div>
 </template>
 
 <script>
-import leftLine from '../../assets/leftLine.svg'
 import IntroductionImageOne from '../../assets/IntroductionImageOne.svg'
+import LeftLineSection from '../shared/LeftLineSection.vue'
 import Button from '../shared/button.vue'
 export default {
     components:{
-        Button
+        Button,
+        LeftLineSection
     },
     setup(){
         return{
-            leftLine,
             IntroductionImageOne
         }
     }
@@ -82,37 +90,13 @@ export default {
     .theIntroductionWrapper{
         padding-top: 90px;
     }
-    .theIntroductionWrapper .headerWrapper{
-        display: flex;
-        justify-content: space-between;
-    }
-    .headerWrapper .sectionWrapper{
-        display: flex;
-        width: 652px;
-        height: 98px;
-    }
-    .sectionWrapper .introductionSection{
-        margin: auto;
-    }
-    .leftPart .to{
-        margin-top: 10px;
-    }
-    .leftPart .to .leftLine{
-        margin-top: -50%;
-        position: relative;
-        top: 35px;
-    }
-    .to .introductionLittleTittle{
-        margin-right: 30px;
-    }
-
-
 
     .theIntroductionWrapper .mainWrapper{
         margin-top: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 180px;
     }
     .mainWrapper .touch{
         width: 214px;
@@ -128,5 +112,11 @@ export default {
     }
     .mainWrapper .introductionTitle{
         margin-bottom: 5px;
+    }
+    .theIntroductionWrapper .mainWrapper{
+        justify-content: center;
+    }
+    .mainWrapper .textWrapper{
+        margin-left: 108px;
     }
 </style>
