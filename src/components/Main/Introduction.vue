@@ -24,24 +24,19 @@
                 </div>
                 <Button class="touch">LET'S GET IN TOUCH</Button>
             </div>
+            <img class="Vector7" :src="Vector7" alt="">
+            <div>
+                <img class="Vector8" :src="Vector7" alt="">
+            </div>
         </main>
-
-        <LeftLineSection>
-            <template v-slot:title>
-                WHY BUILD
-            </template>
-            <template v-slot:littleTitle>
-                WITH HYDRA?
-            </template>
-            <template v-slot:section>
-                Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
-            </template>
-        </LeftLineSection>
     </div>
 </template>
 
 <script>
 import IntroductionImageOne from '../../assets/IntroductionImageOne.svg'
+import Vector7 from '../../assets/Vector7.svg'
+import Vector8 from '../../assets/Vector8.svg'
+
 import LeftLineSection from '../shared/LeftLineSection.vue'
 import Button from '../shared/button.vue'
 export default {
@@ -51,7 +46,9 @@ export default {
     },
     setup(){
         return{
-            IntroductionImageOne
+            IntroductionImageOne,
+            Vector7,
+            Vector8
         }
     }
 }
@@ -118,5 +115,15 @@ export default {
     }
     .mainWrapper .textWrapper{
         margin-left: 108px;
+    }
+    .Vector7{
+        position: absolute;
+        z-index: -1;
+        right: 228px;
+    }
+    .Vector8{
+        position: absolute;
+        z-index: -2;
+        right: 86px;
     }
 </style>

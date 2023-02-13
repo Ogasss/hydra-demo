@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { computed, onMounted } from 'vue'
+import { computed } from 'vue'
 export default {
     props:[
         'simple'
@@ -20,9 +20,6 @@ export default {
             }else{
                 return 'hydraButton'
             }
-        })
-        onMounted(()=>{
-            console.log(props.simple)
         })
         return {
             buttonStyle

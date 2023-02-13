@@ -7,10 +7,16 @@
 </template>
 
 <script>
+import { onMounted } from 'vue'
 import Layout from './components/Layout.vue'
 export default {
   components: {
     Layout
+  },
+  setup(){
+    onMounted(()=>{
+      
+    })
   }
 }
 </script>
