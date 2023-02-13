@@ -9,6 +9,9 @@
         <Why/>
         <Technologies/>
         <How/>
+        <Join/>
+        <Links/>
+        <Footer/>
     </div>
 </div>
 </template>
@@ -20,6 +23,9 @@ import Introduction from './Main/Introduction.vue'
 import Why from './Main/Why.vue'
 import Technologies from './Main/Technologies.vue'
 import How from './Main/How.vue'
+import Join from './Main/Join.vue'
+import Links from './Main/Links.vue'
+import Footer from './Main/Footer.vue'
 
 import { onMounted } from 'vue'
 export default {
@@ -29,7 +35,10 @@ export default {
         Introduction,
         Why,
         Technologies,
-        How
+        How,
+        Join,
+        Links,
+        Footer
     },
     setup(){
         let scrollTop = 0
@@ -53,9 +62,7 @@ export default {
 .theLayoutWrapper{
     width: 100%;
     min-width: 1485px;
-    height: 5597px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    /* height: 5597px; */
 }
 .theTopNav{
     position: fixed;

@@ -1,8 +1,11 @@
 <template>
     <div class="theBallItem">
-        <Button class="ball" ball>
-            <slot name="number"></slot>
-        </Button>
+        <div class="ballWrapper">
+            <Button class="ball" ball>
+                <slot name="number"></slot>
+            </Button>
+        </div>
+        
         <div class="textPart">
             <img class="right" :src="right" alt="">
             <div class="text">
@@ -34,10 +37,19 @@ export default {
         justify-content: center;
         align-items: center;
     }
+    .ballWrapper{
+        width: 198px;
+        height: 198px;
+        background: #0D0D0D52;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-bottom: 25px;
+    }
     .ball{
         width: 159px;
         height: 159px;
-        margin-bottom:  45px;
     }
     .textPart{
         display: flex;
