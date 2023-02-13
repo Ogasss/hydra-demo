@@ -95,7 +95,6 @@ export default {
     .DiveImageOne{
         width: 490px;
         height: 426px;
-        border-radius: 100px 100px 100px 240px;
     }
     .theTextWrapper{
         display: flex;
@@ -141,6 +140,7 @@ export default {
     .mainWrapper{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .theImageWrapper .DiveImageOne{
