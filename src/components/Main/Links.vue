@@ -23,6 +23,8 @@
             </div>
             <Button class="button">BUILD YOUR WORLD</Button>
         </div>
+        <img class="Vector V18" :src="Vector18" alt="">
+        <img class="Vector V19" :src="Vector19" alt="">
     </div>
 </template>
 
@@ -34,6 +36,8 @@ import linkedin from '../../assets/linkedin.svg'
 import youtube from '../../assets/youtube.svg'
 import instagram from '../../assets/instagram.svg'
 import pinterest from '../../assets/pinterest.svg'
+import Vector18 from '../../assets/Vector18.svg'
+import Vector19 from '../../assets/Vector19.svg'
 
 import Button from '../shared/button.vue'
 
@@ -61,13 +65,16 @@ export default {
             linkedin,
             youtube,
             instagram,         
-            pinterest   
+            pinterest,
+            
         ]
         return{
             logo,
             linksList1,
             linksList2,
-            icons
+            icons,
+            Vector18,
+            Vector19
         }
     }
 }
@@ -142,5 +149,15 @@ export default {
     }
     .other .icons .icon{
         margin-right: 20px;
+    }
+    .theLinksWrapper .Vector{
+        position: absolute;
+        z-index: -1;
+    }
+    .V18{
+        margin-top: -43px;
+    }
+    .V19{
+        margin-top: -323px;
     }
 </style>
